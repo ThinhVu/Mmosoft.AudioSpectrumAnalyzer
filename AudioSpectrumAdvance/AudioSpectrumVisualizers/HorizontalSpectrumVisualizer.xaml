@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="AudioSpectrumAdvance.HorizontalSpectrumVisualizer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="200" Width="1286.209">
+    <StackPanel>
+        <StackPanel.LayoutTransform>
+            <RotateTransform Angle="-90"/>
+        </StackPanel.LayoutTransform>
+        <ProgressBar x:Name="Bar01" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar02" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar03" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar04" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar05" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar06" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar07" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar08" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar09" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar10" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar11" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar12" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar13" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar14" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar15" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar16" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar17" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar18" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar19" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar20" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar21" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar22" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar23" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar24" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar25" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar26" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar27" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar28" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar29" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar30" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar31" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar32" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar33" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar34" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar35" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar36" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar37" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar38" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar39" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar40" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar41" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar42" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar43" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar44" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar45" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar46" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar47" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar48" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar49" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar50" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar51" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar52" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar53" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar54" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar55" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar56" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar57" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar58" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar59" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar60" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar61" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar62" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar63" Height="15" Margin="5" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+        <ProgressBar x:Name="Bar64" Height="15" Margin="5,0" Minimum="0" Maximum="255" Value="0" Foreground="#0000ff" Background="White"/>
+    </StackPanel>
+</UserControl>
