@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.horizontalSpectrumVisualizer1 = new AudioSpectrumAdvance.AudioSpectrumVisualizers.HorizontalSpectrumVisualizer();
             this.circleSpectrumVisualizer1 = new AudioSpectrumAdvance.CircleSpectrumVisualizer();
             this.SuspendLayout();
             // 
@@ -40,6 +41,17 @@
             this.comboBox1.Size = new System.Drawing.Size(281, 21);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Visible = false;
+            // 
+            // horizontalSpectrumVisualizer1
+            // 
+            this.horizontalSpectrumVisualizer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.horizontalSpectrumVisualizer1.BackColor = System.Drawing.Color.Transparent;
+            this.horizontalSpectrumVisualizer1.Location = new System.Drawing.Point(12, 625);
+            this.horizontalSpectrumVisualizer1.Name = "horizontalSpectrumVisualizer1";
+            this.horizontalSpectrumVisualizer1.Size = new System.Drawing.Size(539, 69);
+            this.horizontalSpectrumVisualizer1.TabIndex = 5;
+            this.horizontalSpectrumVisualizer1.Text = "horizontalSpectrumVisualizer1";
             // 
             // circleSpectrumVisualizer1
             // 
@@ -57,6 +69,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(563, 706);
+            this.Controls.Add(this.horizontalSpectrumVisualizer1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.circleSpectrumVisualizer1);
             this.Name = "frmSpectrum";
@@ -70,6 +83,7 @@
 
         private System.Windows.Forms.ComboBox comboBox1;
         private CircleSpectrumVisualizer circleSpectrumVisualizer1;
+        private AudioSpectrumVisualizers.HorizontalSpectrumVisualizer horizontalSpectrumVisualizer1;
     }
 }
 

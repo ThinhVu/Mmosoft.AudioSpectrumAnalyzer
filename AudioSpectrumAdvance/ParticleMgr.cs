@@ -10,7 +10,7 @@ namespace AudioSpectrumAdvance
 {
     public class ParticleMgr
     {
-        private const int MAXIMUM_SIZE = 6;
+        private const int MAXIMUM_SIZE = 5;
         private const int MAXIMUM_MOVING_STEP = 5;
         private System.Drawing.Point _origin;
         private Particle[] _particles;

@@ -27,11 +27,11 @@ namespace AudioSpectrumAdvance
         public List<byte> _spectrumdata;   //spectrum data buffer
 
         //
-        private IAudioSpectrumVisualizer[] _spectrumVisualizer;//spectrum dispay control
+        private BaseSpectrumVisualizer[] _spectrumVisualizer;//spectrum dispay control
         private ComboBox _devicelist;       //device list
 
         //ctor
-        public Analyzer(IAudioSpectrumVisualizer[] audioSpectrumVisualizer, ComboBox devicelist)
+        public Analyzer(BaseSpectrumVisualizer[] audioSpectrumVisualizer, ComboBox devicelist)
         {
             _fft = new float[8192];
             _lastlevel = 0;
@@ -143,34 +143,12 @@ namespace AudioSpectrumAdvance
                     visualizer.Set(_spectrumdata.ToArray());
                 }
             }
-
-            int level = BassWasapi.BASS_WASAPI_GetLevel();
-            if (level == _lastlevel && level != 0) _hanctr++;
-            _lastlevel = level;
-
-            //Required, because some programs hang the output. If the output hangs for a 75ms
-            //this piece of code re initializes the output so it doesn't make a gliched sound for long.
-            if (_hanctr > 3)
-            {
-                _hanctr = 0;
-                Free();
-                Bass.BASS_Init(0, 44100, BASSInit.BASS_DEVICE_DEFAULT, IntPtr.Zero);
-                _initialized = false;
-                Enable = true;
-            }
         }
 
         // WASAPI callback, required for continuous recording
         private int Process(IntPtr buffer, int length, IntPtr user)
         {
             return length;
-        }
-
-        // clean
-        public void Free()
-        {
-            BassWasapi.BASS_WASAPI_Free();
-            Bass.BASS_Free();
         }
     }
 }

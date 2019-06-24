@@ -29,7 +29,7 @@ namespace AudioSpectrumAdvance
 
             DoubleBuffered = true;
 
-            _analyzer = new Analyzer(new IAudioSpectrumVisualizer []{ circleSpectrumVisualizer1 }, comboBox1);
+            _analyzer = new Analyzer(new BaseSpectrumVisualizer []{ circleSpectrumVisualizer1, horizontalSpectrumVisualizer1 }, comboBox1);
             _analyzer.Enable = true;
             _analyzer.DisplayEnable = true;
 

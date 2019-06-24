@@ -59,9 +59,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bass.Net, Version=2.4.10.3, Culture=neutral, PublicKeyToken=b7566c273e6ef480, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\_Libs\BassNet\Bass.Net.dll</HintPath>
+    <Reference Include="Bass.Net">
+      <HintPath>..\lib\BassNet\Bass.Net.dll</HintPath>
     </Reference>
     <Reference Include="Mmosoft.Oops">
       <HintPath>..\..\..\MyProj\Mmosoft.Oops\Mmosoft.Oops\Mmosoft.Oops\bin\Release\Mmosoft.Oops.dll</HintPath>
@@ -86,7 +85,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analyzer.cs" />
+    <Compile Include="AudioSpectrumVisualizers\Bar.cs" />
     <Compile Include="AudioSpectrumVisualizers\CircleSpectrumVisualizer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AudioSpectrumVisualizers\HorizontalSpectrumVisualizer.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="frmSpectrum.cs">
@@ -95,13 +98,12 @@
     <Compile Include="frmSpectrum.Designer.cs">
       <DependentUpon>frmSpectrum.cs</DependentUpon>
     </Compile>
-    <Compile Include="AudioSpectrumVisualizers\IAudioSpectrumVisualizer.cs" />
+    <Compile Include="AudioSpectrumVisualizers\BaseSpectrumVisualizer.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ParticleMgr.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AudioSpectrumVisualizers\HorizontalSpectrumVisualizer.xaml.cs">
-      <DependentUpon>HorizontalSpectrumVisualizer.xaml</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="frmSpectrum.resx">
       <DependentUpon>frmSpectrum.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,16 +131,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="AudioSpectrumVisualizers\HorizontalSpectrumVisualizer.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Assests\avatar.jpg" />
     <EmbeddedResource Include="Assests\bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(SolutionDir)lib\BassNet" "$(ProjectDir)$(OutDir)" /i /y /r</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
