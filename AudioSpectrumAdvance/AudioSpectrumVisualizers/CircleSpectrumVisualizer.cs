@@ -1,4 +1,4 @@
-﻿using AudioSpectrumAdvance.AudioSpectrumVisualizers;
+using AudioSpectrumAdvance.AudioSpectrumVisualizers;
 using Mmosoft.Oops;
 using System;
 using System.Drawing;
@@ -46,8 +46,8 @@ namespace AudioSpectrumAdvance
         {
             _originLocation = new Point(this.Width / 2, this.Height / 2);
             _baseLineRect = new Rectangle(_originLocation.X, _originLocation.Y, _padding * 2, _padding * 2)
-                .MoveXY(-_padding, -_padding)
-                .DecreaseSizeFromCenter(8, 8);
+                .AdjustXY(-_padding, -_padding)
+                .AdjustSizeFromCenter(8, 8);
 
             if (_imgGraphicsPath != null)
                 _imgGraphicsPath.Dispose();
