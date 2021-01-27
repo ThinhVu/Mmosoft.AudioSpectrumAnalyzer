@@ -63,7 +63,7 @@ namespace AudioSpectrumAdvance
                 TotalStep = y,
                 AnimAction = (stepI) => 
                 { 
-                    _bgImageRect = _bgImageRect.MoveY(-increaseY); 
+                    _bgImageRect = _bgImageRect.AdjustY(-increaseY); 
                     Invalidate(); 
                 }
             });
@@ -75,7 +75,7 @@ namespace AudioSpectrumAdvance
                 TotalStep = x,
                 AnimAction = (stepX) => 
                 { 
-                    _bgImageRect = _bgImageRect.MoveX(-increaseX); 
+                    _bgImageRect = _bgImageRect.AdjustX(-increaseX); 
                     Invalidate(); 
                 }
             });
@@ -87,7 +87,7 @@ namespace AudioSpectrumAdvance
                 TotalStep = y,
                 AnimAction = (stepI) => 
                 { 
-                    _bgImageRect = _bgImageRect.MoveY(increaseY); 
+                    _bgImageRect = _bgImageRect.AdjustY(increaseY); 
                     Invalidate(); 
                 }
             });
@@ -99,7 +99,7 @@ namespace AudioSpectrumAdvance
                 TotalStep = x,
                 AnimAction = (stepX) => 
                 {
-                    _bgImageRect = _bgImageRect.MoveX(increaseX); 
+                    _bgImageRect = _bgImageRect.AdjustX(increaseX); 
                     Invalidate(); 
                 }
             });

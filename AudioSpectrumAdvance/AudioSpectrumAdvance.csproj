@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AudioSpectrumAdvance</RootNamespace>
     <AssemblyName>AudioSpectrumAdvance</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,7 +64,7 @@
       <HintPath>..\lib\BassNet\Bass.Net.dll</HintPath>
     </Reference>
     <Reference Include="Mmosoft.Oops">
-      <HintPath>..\..\..\MyProj\Mmosoft.Oops\Mmosoft.Oops\Mmosoft.Oops\bin\Release\Mmosoft.Oops.dll</HintPath>
+      <HintPath>..\lib\Mmosoft.Oops.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

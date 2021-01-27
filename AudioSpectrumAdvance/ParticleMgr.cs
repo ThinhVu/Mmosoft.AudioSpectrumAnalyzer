@@ -79,7 +79,7 @@ namespace AudioSpectrumAdvance
 
                 // update alpha and region
                 _particles[i].Alpha -= 1;
-                _particles[i].Region = _particles[i].Region.MoveXY(direction.X, direction.Y);
+                _particles[i].Region = _particles[i].Region.AdjustXY(direction.X, direction.Y);
 
                 ResetParticleIfNeeded(ref _particles[i]);
             }
